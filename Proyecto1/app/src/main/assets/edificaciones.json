@@ -1,0 +1,82 @@
+[
+  {
+    "titulo": "Catedral de Arequipa",
+    "categoria": "Catedral",
+    "descripcion": "Construida en el siglo XVII, ubicada en la Plaza de Armas de Arequipa.",
+    "imagen": "catedral",
+    "latitud": -16.398784,
+    "longitud": -71.535035
+  },
+  {
+    "titulo": "Monasterio de Santa Catalina",
+    "categoria": "Monasterio",
+    "descripcion": "Fundado en 1580, es uno de los monasterios más importantes y turísticos de la ciudad.",
+    "imagen": "monasterio",
+    "latitud": -16.398419,
+    "longitud": -71.535389
+  },
+  {
+    "titulo": "Casa del Moral",
+    "categoria": "Casa Colonial",
+    "descripcion": "Casa colonial del siglo XVIII, famosa por su arquitectura de estilo renacentista.",
+    "imagen": "casa_moral",
+    "latitud": -16.397645,
+    "longitud": -71.537620
+  },
+  {
+    "titulo": "Museo Santuarios Andinos",
+    "categoria": "Museo",
+    "descripcion": "Museo que alberga la famosa momia de Juanita, la dama de Ampato.",
+    "imagen": "museo_santuarios",
+    "latitud": -16.400278,
+    "longitud": -71.535833
+  },
+  {
+    "titulo": "Casa Museo Mario Vargas Llosa",
+    "categoria": "Casa Museo",
+    "descripcion": "Casa donde vivió el escritor Mario Vargas Llosa, que ahora es un museo dedicado a su vida y obra.",
+    "imagen": "casa_museo_vargas_llosa",
+    "latitud": -16.394438,
+    "longitud": -71.531578
+  },
+  {
+    "titulo": "Convento de Santa Teresa",
+    "categoria": "Convento",
+    "descripcion": "Convento fundado en 1748, que conserva su arquitectura colonial y una gran cantidad de arte religioso.",
+    "imagen": "convento_santa_teresa",
+    "latitud": -16.389827,
+    "longitud": -71.537107
+  },
+  {
+    "titulo": "Iglesia de la Compañía",
+    "categoria": "Iglesia",
+    "descripcion": "Iglesia jesuita del siglo XVII, considerada una de las más hermosas de Arequipa por su arquitectura barroca.",
+    "imagen": "iglesia_compania",
+    "latitud": -16.398017,
+    "longitud": -71.536524
+  },
+  {
+    "titulo": "Mercado San Camilo",
+    "categoria": "Mercado",
+    "descripcion": "Uno de los mercados más antiguos y tradicionales de Arequipa, famoso por su oferta de productos locales y artesanías.",
+    "imagen": "mercado_san_camilo",
+    "latitud": -16.395893,
+    "longitud": -71.536086
+  },
+  {
+    "titulo": "Monumento a la Virgen de Chapi",
+    "categoria": "Monumento",
+    "descripcion": "Monumento en honor a la Virgen de Chapi, patrona de Arequipa, ubicada en el distrito de Uchumayo.",
+    "imagen": "virgen_chapi",
+    "latitud": -16.350000,
+    "longitud": -71.457500
+  },
+  {
+    "titulo": "Yanahuara",
+    "categoria": "Mirador",
+    "descripcion": "Un pintoresco mirador con una vista panorámica de Arequipa y el volcán Misti.",
+    "imagen": "yanahuara",
+    "latitud": -16.393150,
+    "longitud": -71.547140
+  }
+]
