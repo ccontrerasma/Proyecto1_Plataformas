@@ -23,9 +23,10 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         // Configuración de botón Cerca de mí
-       // binding.btnCercaDeMi.setOnClickListener(view -> {
-        //    Intent intentLista = new Intent(HomeActivity.this, ListaActivity.class);
-        //    startActivity(intentLista);
-       // });
+         binding.btnCercaDeMi.setOnClickListener(view -> {
+            Intent intentLista = new Intent(HomeActivity.this, ListaActivity.class);
+            startActivity(intentLista);
+         });
     }
 }
+
