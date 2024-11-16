@@ -1,17 +1,16 @@
 package com.example.proyecto1;
 
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -58,6 +57,14 @@ public class ListaActivity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {}
         });
+
+        // Configurar el clic en cualquier parte del layout
+        FrameLayout frameLayoutOverlay = findViewById(R.id.frameLayoutOverlay);  // Referencia al FrameLayout
+        frameLayoutOverlay.setOnClickListener(v -> {
+            // Ir a MainActivity (con el layout activity_main2.xml)
+            Intent intent = new Intent(ListaActivity.this, MainActivity.class);  // Se redirige a MainActivity
+            startActivity(intent);
+        });
     }
 
     private List<Edificacion> cargarEdificaciones() {
@@ -87,3 +94,5 @@ public class ListaActivity extends AppCompatActivity {
         }
     }
 }
+
+

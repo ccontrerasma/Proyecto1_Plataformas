@@ -14,12 +14,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.proyecto1.databinding.ActivityMainBinding;
 import java.io.BufferedReader;
-
+import java.io.FileReader;
+import java.io.IOException;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
-import java.io.FileReader;
-import java.io.IOException;
+
 public class LoginActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private ActivityResultLauncher<Intent> accountResultLauncher;
@@ -75,6 +75,12 @@ public class LoginActivity extends AppCompatActivity {
 
     // Método que valida los datos de login con el archivo cuentas.txt
     private boolean validateLogin(String username, String password) {
+        // Verifica si el usuario y la contraseña son admin
+        if ("admin".equals(username) && "admin".equals(password)) {
+            return true;
+        }
+
+        // Si no es "admin", revisa el archivo cuentas.txt
         try (BufferedReader reader = new BufferedReader(new FileReader(getFilesDir() + "/cuentas.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
@@ -86,6 +92,7 @@ public class LoginActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         return false;
     }
 }
